@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #3C3C3C;
+    color: aliceblue;
+    padding: 14px;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+}
+nav,
+section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+header section img {
+    max-width: 42px;
+    border-radius: 100%;
+    border: 2px solid cyan;
+}
+
+.whiteLink {
+    color: white;
+}
+
+.greyLink {
+    color: grey;
+}
+
+a {
+    text-decoration: unset;
+    font-size: 0.8em;
+}
+a:hover{
+    text-decoration: underline;
+}
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 14px
+}
+
+.headerText {
+    font-size: 5em;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+.searchBar{
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 14px;
+    border: 1px solid aliceblue;
+    padding: 14px;
+    border-radius: 24px;
+}
+.searchBar:hover{
+    border-color: transparent;
+    background: hsl(0, 0%, 45%);
+}
+
+input{
+    background: transparent;
+    outline: none;
+    border: unset;
+    color: white;
+    flex: 1;
+}
+.searchButtons {
+    display: flex;
+    align-items: center;
+    gap:14px;
+}
+
+.searchButtons button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: rgb(108, 108, 109);
+    color: aliceblue;
+    border: 2px solid rgb(108, 108, 109);
+    cursor: pointer;
+}
+.searchButtons button:hover {
+    border: 2px solid #89888b;
+}
+
+.IconButton {
+    background: transparent;
+    border: none;
+    color: aliceblue;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.IconButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.languageSelection {
+    font-size: 0.8em;
+}
+
+.languageSelection span {
+    color: rgb(93, 157, 241);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer > section {
+    padding: 14px;
+}
+
+footer > section:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid darkgray;
+}
+
+.footerLink{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footerLink a {
+    cursor: pointer;
+}
+
+
+@media (min-width: 540px) {
+    footer>section:last-child {
+    flex-direction: row;
+    }
+}
